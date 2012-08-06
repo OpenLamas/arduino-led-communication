@@ -1,4 +1,4 @@
-arduino-led-communication
+Arduino led-communication
 =========================
 Implémentation d'un protocole de communication via une led et une photorésistance.
 
