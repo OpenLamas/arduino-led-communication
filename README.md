@@ -1,3 +1,21 @@
 arduino-led-communication
 =========================
-Essai d'implémentation de différentes couches du modèle OSI.
+Implémentation d'un protocole de communication via une led et une photorésistance.
+
+L'émetteur est un raspberry pi. Les pins sont commandé par un programe en C qui utilise la lib WiringPi (https://projects.drogon.net/raspberry-pi/wiringpi/)
+Pour compiler (après avoir installé la lib) : g++ -o emetteur emetteur.cpp -L/usr/local/lib -lwiringPi
+
+Le récepteur est un arduino uno
+
+Structure d'un paquet :
+
+----------------------------------------------------
+| Init  | Taille |    Message   |      Checksum    |
+----------------------------------------------------
+| 1 bit | 5 bits | max 217 bits | (non imptémanté) |
+----------------------------------------------------
+
+Une lettre : 7 bits
+Taille max message : 31 lettres
+Debit : 50 bits/sec
+Temps max de transmision d'un paquet : 5.1 sec

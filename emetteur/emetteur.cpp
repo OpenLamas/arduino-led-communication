@@ -1,7 +1,7 @@
 #include <wiringPi.h>
 #include <stdio.h>
 #include <vector>
-#include <iostream>
+// #include <iostream>
 
 void charToBin(std::vector <int> &buffer, char lettre){
   printf("%d\n", lettre);
@@ -12,6 +12,7 @@ void charToBin(std::vector <int> &buffer, char lettre){
       break;
   }
 }
+
 int main (void)
 {
   int pin = 7;
