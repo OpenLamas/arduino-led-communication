@@ -26,7 +26,7 @@ Structure d'un paquet :
 </table>
 --
 
-Une lettre : 7 bits
-Taille max message : 31 lettres
-Debit : 50 bits/sec
-Temps max de transmision d'un paquet : 5.1 sec
+* Une lettre : 7 bits
+* Taille max message : 31 lettres
+* Debit : 50 bits/sec
+* Temps max de transmision d'un paquet : 5.1 sec
